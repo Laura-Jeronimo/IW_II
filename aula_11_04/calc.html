@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Somando números</h1>
+<p>Informe dois números para fazer a soma</p>
+<input type="number" name="num" id="n">
+<input type="number" name="num2" id="n2">
+<br>
+<br>
+<input type="button" value="SOMAR" onclick="somar()">
+<input type="button" value="SUBTRAÇÃO" onclick="subtrair()">
+<input type="button" value="MULTIPLICAÇÃO" onclick="multiplicar()">
+<input type="button" value="DIVISÃO" onclick="dividir()">
+
+<div id="resultado"></div>
+
+<script>
+    var num = document.getElementById('n')
+    var num2 = document.getElementById('n2')
+    var result = document.getElementById('resultado')
+
+    function somar(){
+
+        var nur = Number(num.value)
+        var nur2 = Number(num2.value)
+        var resposta = nur + nur2
+
+        soma.innerHTML = `A soma dos valores ${nur} e ${nur2} é igual a: ${resposta}`
+    }
+
+    function subtrair(){
+
+        var nur = Number(num.value)
+        var nur2 = Number(num2.value)
+        var resposta = nur - nur2
+
+        result.innerHTML = `A subtração dos valores ${nur} e ${nur2} é igual a: ${resposta}`
+    }
+
+    function multiplicar(){
+        var nur = Number(num.value)
+        var nur2 = Number(num2.value)
+        var resposta = nur * nur2
+
+        result.innerHTML = `A multiplicação dos valores ${nur} e ${nur2} é igual a: ${resposta}`
+    }
+
+    function dividir(){
+        var nur = Number(num.value)
+        var nur2 = Number(num2.value)
+        var resposta = nur / nur2
+
+        result.innerHTML = `A divisão dos valores ${nur} e ${nur2} é igual a: ${resposta}`
+    }
+
+</script>
+
+</body>
+</html>
