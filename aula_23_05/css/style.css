@@ -1,0 +1,16 @@
+
+.conteudo {
+    text-align: center;
+    padding-top: 15%;
+}
+
+#botao {
+    height: 50px;
+    width: 90px;
+    font-size: 20px;
+    border-radius: 10%;
+}
+
+img {
+    width: 10%;
+}
