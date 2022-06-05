@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <form action="code.js" method="post">
+        <h1>Informe seu ano de nascimento</h1>
+            <input type="number" name="ano" id="ano">
+        <br>
+        <h1>Informe seu sexo</h1>
+            <input type="radio" id="sexo" name="sexo" value="Masculino">
+            <label>Masculino</label><br>
+            <input type="radio" id="sexo" name="sexo" value="Feminino">
+            <label>Feminino</label><br>
+        <br>
+            <input type="button" id="calcular" value="OK" onclick="calcular()"> 
+    </form>
+
+    <div id="result">
+        <figure><img src="img/first.png" id="image" alt=""></figure>
+        <h1 id="txt"></h1>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
